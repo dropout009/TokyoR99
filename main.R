@@ -51,6 +51,8 @@ df <- tibble(
   income = f(ds, de, biz) * rnorm(N, 1, 0.05)
 )
 
+df %>% 
+  write_csv("output/simulation.csv")
 
 # シミュレーションデータの可視化 ---------------------------------------------------------
 
